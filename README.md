@@ -9,7 +9,7 @@ ReusableCell
 
 ```swift
 extension CustomCell: ReusableView {} // Make your custom cells
-let cell: CustomCell = collectionView.dequeueReusableCell(for: indexPath) // Instantiate your custom cells
+let cell: CustomCell = collectionView.dequeueReusableCell(for: indexPath) // Instantiate your cells
 ```
 
 ### Install:
