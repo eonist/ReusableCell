@@ -1,9 +1,9 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Swift-lint Sindre](https://img.shields.io/badge/swift--lint-sindre-brightgreen.svg)](https://github.com/sindresorhus/swiftlint-sindre)
+[![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
 
 
 # ReusableCell
-ReusableCell
+Makes dequeuing cells simpler 
 
 ### Example:
 
