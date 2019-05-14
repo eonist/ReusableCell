@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F1E4A85E2275795100E8993A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A85D2275795100E8993A /* AppDelegate.swift */; };
-		F1E4A8602275795100E8993A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A85F2275795100E8993A /* ViewController.swift */; };
-		F1E4A8632275795100E8993A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E4A8612275795100E8993A /* Main.storyboard */; };
+		F1E4A8602275795100E8993A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A85F2275795100E8993A /* MainVC.swift */; };
 		F1E4A8652275795500E8993A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E4A8642275795500E8993A /* Assets.xcassets */; };
 		F1E4A8682275795500E8993A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E4A8662275795500E8993A /* LaunchScreen.storyboard */; };
 		F1E4A8782275796D00E8993A /* ReusableCell_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E4A8762275796D00E8993A /* ReusableCell_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,8 +47,7 @@
 /* Begin PBXFileReference section */
 		F1E4A85A2275795100E8993A /* ReusableCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReusableCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E4A85D2275795100E8993A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1E4A85F2275795100E8993A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F1E4A8622275795100E8993A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1E4A85F2275795100E8993A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F1E4A8642275795500E8993A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E4A8672275795500E8993A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E4A8692275795500E8993A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,8 +102,7 @@
 			children = (
 				F1E4A85D2275795100E8993A /* AppDelegate.swift */,
 				F1E4A8812275797D00E8993A /* src */,
-				F1E4A85F2275795100E8993A /* ViewController.swift */,
-				F1E4A8612275795100E8993A /* Main.storyboard */,
+				F1E4A85F2275795100E8993A /* MainVC.swift */,
 				F1E4A8642275795500E8993A /* Assets.xcassets */,
 				F1E4A8662275795500E8993A /* LaunchScreen.storyboard */,
 				F1E4A8692275795500E8993A /* Info.plist */,
@@ -230,7 +227,6 @@
 			files = (
 				F1E4A8682275795500E8993A /* LaunchScreen.storyboard in Resources */,
 				F1E4A8652275795500E8993A /* Assets.xcassets in Resources */,
-				F1E4A8632275795100E8993A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E4A8602275795100E8993A /* ViewController.swift in Sources */,
+				F1E4A8602275795100E8993A /* MainVC.swift in Sources */,
 				F1E4A85E2275795100E8993A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,14 +291,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F1E4A8612275795100E8993A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1E4A8622275795100E8993A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F1E4A8662275795500E8993A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
