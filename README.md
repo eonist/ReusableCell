@@ -3,12 +3,12 @@
 
 
 # ReusableCell
-Makes dequeuing cells simpler 
+Makes dequeuing cells simpler
 
 ### Example:
 
 ```swift
-extension CustomCell: ReusableView {} // Make your custom cells
+extension CustomCell: ReusableCell {} // Make your custom cells
 let cell: CustomCell = collectionView.dequeueReusableCell(for: indexPath) // Instantiate your cells
 ```
 
