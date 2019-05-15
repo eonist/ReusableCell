@@ -29,7 +29,7 @@ extension UITableView {
 ///
 /// Adds indexPath support
 ///
-extension UITableView{
+extension UITableView {
     public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
         return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
     }

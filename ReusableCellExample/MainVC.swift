@@ -7,6 +7,4 @@ class MainVC: UIViewController {
     }
     override var prefersStatusBarHidden: Bool { return true }
 }
-class MainView: UIView {
-    
-}
+class MainView: UIView {}
