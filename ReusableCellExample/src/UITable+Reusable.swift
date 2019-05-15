@@ -1,6 +1,10 @@
 import UIKit
 
 extension UITableView {
+    ///
+    /// ## Example:
+    /// tableView.register(CustomCell.self)
+    ///
     public func register<T: UITableViewCell>(_: T.Type) where T: ReusableCellKind {
         register(T.self, forCellReuseIdentifier: T.defaultReuseIdentifier)
     }
