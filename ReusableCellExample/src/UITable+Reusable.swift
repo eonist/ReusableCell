@@ -26,13 +26,10 @@ extension UITableView {
         return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
     }
 }
-// New
 extension UITableView{
-    // new
     public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
         return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
     }
-    // new
     public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind, T: NibLoadableView {
         return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
     }
