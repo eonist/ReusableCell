@@ -16,8 +16,8 @@
 		F1E4A87C2275796E00E8993A /* ReusableCell_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1E4A8742275796D00E8993A /* ReusableCell_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F1E4A886227579E300E8993A /* UITable+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A882227579E300E8993A /* UITable+Reusable.swift */; };
 		F1E4A887227579E300E8993A /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A883227579E300E8993A /* NibLoadableView.swift */; };
-		F1E4A888227579E300E8993A /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A884227579E300E8993A /* ReusableCell.swift */; };
-		F1E4A889227579E300E8993A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A885227579E300E8993A /* ReusableView.swift */; };
+		F1E4A888227579E300E8993A /* ReusableCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A884227579E300E8993A /* ReusableCellKind.swift */; };
+		F1E4A889227579E300E8993A /* ReusableCellKind+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A885227579E300E8993A /* ReusableCellKind+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,8 @@
 		F1E4A8772275796D00E8993A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1E4A882227579E300E8993A /* UITable+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITable+Reusable.swift"; sourceTree = "<group>"; };
 		F1E4A883227579E300E8993A /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
-		F1E4A884227579E300E8993A /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
-		F1E4A885227579E300E8993A /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		F1E4A884227579E300E8993A /* ReusableCellKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCellKind.swift; sourceTree = "<group>"; };
+		F1E4A885227579E300E8993A /* ReusableCellKind+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReusableCellKind+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				F1E4A883227579E300E8993A /* NibLoadableView.swift */,
-				F1E4A884227579E300E8993A /* ReusableCell.swift */,
-				F1E4A885227579E300E8993A /* ReusableView.swift */,
+				F1E4A884227579E300E8993A /* ReusableCellKind.swift */,
+				F1E4A885227579E300E8993A /* ReusableCellKind+Extension.swift */,
 				F1E4A882227579E300E8993A /* UITable+Reusable.swift */,
 			);
 			path = src;
@@ -275,8 +275,8 @@
 			files = (
 				F1E4A887227579E300E8993A /* NibLoadableView.swift in Sources */,
 				F1E4A886227579E300E8993A /* UITable+Reusable.swift in Sources */,
-				F1E4A888227579E300E8993A /* ReusableCell.swift in Sources */,
-				F1E4A889227579E300E8993A /* ReusableView.swift in Sources */,
+				F1E4A888227579E300E8993A /* ReusableCellKind.swift in Sources */,
+				F1E4A889227579E300E8993A /* ReusableCellKind+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
