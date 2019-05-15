@@ -15,14 +15,25 @@ extension UITableView {
     }
     ///
     /// ## Examples:
-    /// let cell: CustomCell = collectionView.dequeueReusableCell(for: indexPath)
+    /// let cell: CustomCell = collectionView.dequeueReusableCell()
     ///
     public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind, T: NibLoadableView {
-        register(T.self)
+//        register(T.self)
         return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
     }
     public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind {
-        register(T.self)
+//        register(T.self)
         return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
+    }
+}
+// New
+extension UITableView{
+    // new
+    public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
+        return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
+    }
+    // new
+    public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind, T: NibLoadableView {
+        return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
     }
 }
