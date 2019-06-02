@@ -18,6 +18,7 @@
 		F1E4A887227579E300E8993A /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A883227579E300E8993A /* NibLoadableView.swift */; };
 		F1E4A888227579E300E8993A /* ReusableCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A884227579E300E8993A /* ReusableCellKind.swift */; };
 		F1E4A889227579E300E8993A /* ReusableCellKind+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4A885227579E300E8993A /* ReusableCellKind+Extension.swift */; };
+		F1FA95B522A3FBC8009088FB /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA95B322A3FB88009088FB /* ReusableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F1E4A883227579E300E8993A /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		F1E4A884227579E300E8993A /* ReusableCellKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCellKind.swift; sourceTree = "<group>"; };
 		F1E4A885227579E300E8993A /* ReusableCellKind+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReusableCellKind+Extension.swift"; sourceTree = "<group>"; };
+		F1FA95B322A3FB88009088FB /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		F1E4A8512275795100E8993A = {
 			isa = PBXGroup;
 			children = (
+				F1E4A8812275797D00E8993A /* src */,
 				F1E4A85C2275795100E8993A /* ReusableCellExample */,
 				F1E4A8752275796D00E8993A /* ReusableCell-iOS */,
 				F1E4A85B2275795100E8993A /* Products */,
@@ -101,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				F1E4A85D2275795100E8993A /* AppDelegate.swift */,
-				F1E4A8812275797D00E8993A /* src */,
 				F1E4A85F2275795100E8993A /* MainVC.swift */,
 				F1E4A8642275795500E8993A /* Assets.xcassets */,
 				F1E4A8662275795500E8993A /* LaunchScreen.storyboard */,
@@ -124,6 +126,7 @@
 			children = (
 				F1E4A883227579E300E8993A /* NibLoadableView.swift */,
 				F1E4A884227579E300E8993A /* ReusableCellKind.swift */,
+				F1FA95B322A3FB88009088FB /* ReusableCell.swift */,
 				F1E4A885227579E300E8993A /* ReusableCellKind+Extension.swift */,
 				F1E4A882227579E300E8993A /* UITable+Reusable.swift */,
 			);
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FA95B522A3FBC8009088FB /* ReusableCell.swift in Sources */,
 				F1E4A887227579E300E8993A /* NibLoadableView.swift in Sources */,
 				F1E4A886227579E300E8993A /* UITable+Reusable.swift in Sources */,
 				F1E4A888227579E300E8993A /* ReusableCellKind.swift in Sources */,
