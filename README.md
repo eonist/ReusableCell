@@ -11,6 +11,10 @@
 tableView.register(CustomCell.self) // Register Cells with ease
 extension CustomCell: ReusableCell {} // Make your custom cells
 let cell = tableView.dequeueReusableCell(for: indexPath) // Instantiate your cells
+// In the cell:
+extension CustomCell: ReusableCellKind { // make your subclass conform to the protocol
+  open class var defaultReuseIdentifier: String { return "\(TextCell.self)" }
+}
 ```
 
 ### Install:
