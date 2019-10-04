@@ -10,6 +10,7 @@ extension UICollectionView {
    }
    ///
    /// Adds support for registering multiple cells: register([HCell.self, VCell.self]) etc
+   /// - Fixme: ⚠️️ currently out of order
    ///
    public func register<T: UICollectionViewCell>(_ types: [T.Type]) where T: ReusableCellKind {
       types.forEach { register($0.self, forCellWithReuseIdentifier: $0.defaultReuseIdentifier) }
@@ -22,10 +23,14 @@ extension UICollectionView {
    ///
    /// ## Examples:
    /// let cell: CustomCell = collectionView.dequeueReusableCell(.init(row: 0, section: 0))
+   /// - Fixme: Should this maybe return optional?
    ///
    public func dequeueReusableCell<T: UICollectionViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
       return dequeueReusableCell(withReuseIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
    }
+   ///
+   /// - Fixme: Should this maybe return optional?
+   ///
    public func dequeueReusableCell<T: UICollectionViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind, T: NibLoadableView {
       return dequeueReusableCell(withReuseIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
    }

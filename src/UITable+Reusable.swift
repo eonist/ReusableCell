@@ -18,6 +18,7 @@ extension UITableView {
    ///
    /// ## Examples:
    /// let cell: CustomCell = collectionView.dequeueReusableCell()
+   /// - Fixme: Should this maybe return optional?
    ///
    public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind, T: NibLoadableView {
       return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
@@ -32,6 +33,9 @@ extension UITableView {
       let nib = UINib(nibName: T.nibName, bundle: bundle)
       register(nib, forCellReuseIdentifier: T.defaultReuseIdentifier)
    }
+   ///
+   /// - Fixme: Should this maybe return optional?
+   ///
    public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind {
       return dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
    }
