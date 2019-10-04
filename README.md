@@ -3,7 +3,8 @@
 
 # ReusableCell
 - Makes dequeuing cells simpler
-- Works for TableView and CollectionView
+- Supports UITableView and UICollectionView
+- Supports UITableViewCell and UICollectionViewCell
 
 ### Example:
 
