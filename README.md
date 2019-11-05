@@ -5,12 +5,24 @@
 - Makes dequeuing cells simpler
 - Works for TableView and CollectionView
 
-### Example:
+### Example 1:
 
 ```swift
 tableView.register(CustomCell.self) // Register Cells with ease
 extension CustomCell: ReusableCell {} // Make your custom cells
 let cell = tableView.dequeueReusableCell(for: indexPath) // Instantiate your cells
+```
+
+### Example 2:
+```swift
+import CommonCell
+import With
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  return with(tableView.dequeueReusableCell(indexPath: indexPath) as TextCell) {
+     $0.backgroundColor = .clear
+     $0.data = rowData[indexPath.row] // populate cell with data
+  }
+}
 ```
 
 ### Install:
