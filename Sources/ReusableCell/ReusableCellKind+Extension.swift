@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 
 extension ReusableCellKind where Self: UIView {
@@ -8,3 +9,4 @@ extension ReusableCellKind where Self: UIView {
       String(describing: self)
    }
 }
+#endif

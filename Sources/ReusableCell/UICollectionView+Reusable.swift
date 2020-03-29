@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 /**
  * Registration
@@ -37,3 +38,4 @@ extension UICollectionView {
 		dequeueReusableCell(withReuseIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
 	}
 }
+#endif

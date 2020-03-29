@@ -1,3 +1,4 @@
+#if os(iOS)
 import Foundation
 /**
  * Protocol for ReusableCell
@@ -7,3 +8,4 @@ import Foundation
 public protocol ReusableCellKind: AnyObject {
    static var defaultReuseIdentifier: String { get }
 }
+#endif

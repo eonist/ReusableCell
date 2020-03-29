@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 
 extension UITableView {
@@ -59,3 +60,4 @@ extension UITableView {
       register(nib, forCellReuseIdentifier: T.defaultReuseIdentifier)
    }
 }
+#endif

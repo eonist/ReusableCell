@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 /**
  * Support for nib
@@ -13,3 +14,4 @@ extension NibLoadableView where Self: UIView {
         String(describing: self)
     }
 }
+#endif
