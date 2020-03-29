@@ -1,10 +1,13 @@
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
 [![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
 
-# ReusableCell
+# Features
 - Makes dequeuing cells simpler
 - Supports UITableView and UICollectionView
 - Supports UITableViewCell and UICollectionViewCell
+
+### Installation
+- SPM: `.package(url: "https://github.com/eonist/ReusableCell", .branch("master"))`
 
 ### Example 1:
 

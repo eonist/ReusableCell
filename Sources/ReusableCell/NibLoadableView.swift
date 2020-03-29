@@ -1,10 +1,15 @@
 import UIKit
-
+/**
+ * Support for nib
+ */
 public protocol NibLoadableView: AnyObject {
     static var nibName: String { get }
 }
+/**
+ * Constant for nib
+ */
 extension NibLoadableView where Self: UIView {
     static var nibName: String {
-        return String(describing: self)
+        String(describing: self)
     }
 }

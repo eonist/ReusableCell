@@ -1,7 +1,10 @@
 import UIKit
 
 extension ReusableCellKind where Self: UIView {
+   /**
+    * The default identifier for a cell
+    */
    public static var defaultReuseIdentifier: String {
-        return String(describing: self)
-    }
+      String(describing: self)
+   }
 }
