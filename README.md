@@ -34,7 +34,3 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 }
 ```
 
-### Install:
-- Carthage: `github "eonist/ReusableCell" "master"`
-- Manual: Open `ReusableCellExample.xcodeproj`
-- CocoaPod (Coming soon)  
