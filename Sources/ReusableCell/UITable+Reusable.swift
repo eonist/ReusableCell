@@ -33,7 +33,9 @@ extension UITableView {
  */
 extension UITableView {
    /**
-    * - Fixme: Should this maybe return optional?
+    * - Fixme: ⚠️️ Should this maybe return optional?
+    * ## Examples:
+    * let cell: CustomCell = collectionView.dequeueReusableCell(indexPath: indexPath)
     */
    public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
