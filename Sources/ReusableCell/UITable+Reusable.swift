@@ -20,10 +20,14 @@ extension UITableView {
    /**
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell()
+    * - Fixme: ⚠️️ rename to dequeue
     */
    public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind, T: NibLoadableView {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
    }
+   /**
+    * - Fixme: ⚠️️ rename to dequeue
+    */
    public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
    }
@@ -34,12 +38,16 @@ extension UITableView {
 extension UITableView {
    /**
     * - Fixme: ⚠️️ Should this maybe return optional?
+    * - Fixme: ⚠️️ rename to dequeue
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell(indexPath: indexPath)
     */
    public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
    }
+   /**
+    * - Fixme: ⚠️️ rename to dequeue
+    */
    public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind, T: NibLoadableView {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
    }
@@ -51,11 +59,15 @@ extension UITableView {
    /**
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell()
-    * - Fixme: Should this maybe return optional?
+    * - Fixme: ⚠️️ Should this maybe return optional?
+    * - Fixme: ⚠️️ rename to dequeue
     */
    public func dequeueReusableCell<T: UITableViewCell>(_: T.Type) -> T where T: ReusableCellKind, T: NibLoadableView {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
    }
+   /**
+    * - Fixme: ⚠️️ Add doc
+    */
    public func register<T: UITableViewCell>(_: T.Type) where T: ReusableCellKind, T: NibLoadableView {
       let bundle = Bundle(for: T.self)
       let nib = UINib(nibName: T.nibName, bundle: bundle)
