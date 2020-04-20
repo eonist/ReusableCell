@@ -13,11 +13,10 @@ extension UICollectionView {
 	}
    /**
     * Adds support for registering multiple cells: register([HCell.self, VCell.self]) etc
-    * - Fixme: ⚠️️ currently out of order
     */
-	public func register<T: UICollectionViewCell>(_ types: [T.Type]) where T: ReusableCellKind {
-		types.forEach { register($0.self, forCellWithReuseIdentifier: $0.defaultReuseIdentifier) }
-	}
+   public func register(_ types: [ReusableCellKind.Type]) {
+      types.forEach { register($0.self, forCellWithReuseIdentifier: $0.defaultReuseIdentifier) }
+   }
 }
 /**
  * Adds indexPath support

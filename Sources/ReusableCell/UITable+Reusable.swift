@@ -14,7 +14,7 @@ extension UITableView {
    /**
     * Adds support for registering multiple cells: register([HCell.self, VCell.self]) etc
     */
-   public func register<T: UITableViewCell>(_ types: [T.Type]) where T: ReusableCellKind {
+   public func register(_ types: [ReusableCellKind.Type]) {
       types.forEach { register($0.self, forCellReuseIdentifier: $0.defaultReuseIdentifier) }
    }
    /**
